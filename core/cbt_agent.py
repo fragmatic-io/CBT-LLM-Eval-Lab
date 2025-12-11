@@ -51,8 +51,12 @@ Return your response in pure JSON, with this exact structure:
 CBT_REVISION_WRAPPER = """
 You produced a previous answer that contained some reasoning issues.
 
-Follow this revision instruction:
+Here is your previous answer:
+---
+{previous}
+---
 
+Follow this revision instruction:
 "{instruction}"
 
 Revise your prior answer to:
@@ -112,5 +116,9 @@ TEXT:
 
         return parsed
 
-    def build_revision_prompt(self, revision_instruction: str) -> str:
-        return CBT_REVISION_WRAPPER.format(instruction=revision_instruction)
+    def build_revision_prompt(
+        self, revision_instruction: str, previous_answer: str
+    ) -> str:
+        return CBT_REVISION_WRAPPER.format(
+            instruction=revision_instruction, previous=previous_answer
+        )

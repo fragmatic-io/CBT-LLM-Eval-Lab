@@ -78,7 +78,8 @@ class LongitudinalRunner:
                 assert cbt_agent is not None
                 reflection = cbt_agent.evaluate(raw)
                 revision_prompt = cbt_agent.build_revision_prompt(
-                    reflection.get("revision_instruction", "")
+                    revision_instruction=reflection.get("revision_instruction", ""),
+                    previous_answer=raw,
                 )
                 revised = llm.complete(revision_prompt)
 

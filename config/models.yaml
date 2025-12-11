@@ -37,18 +37,3 @@ evaluator_models:
     name: "google/gemini-3-pro-preview"
     temperature: 0.2
     max_tokens: 2048
-
-  - id: "GPT5.1"
-    name: "openai/gpt-5.1-chat"
-    temperature: 0.2
-    max_tokens: 2048
-
-  - id: "kimik2"
-    name: "moonshotai/kimi-k2-thinking"
-    temperature: 0.2
-    max_tokens: 2048
-
-  - id: "claude4.5"
-    name: "anthropic/claude-sonnet-4.5"
-    temperature: 0.2
-    max_tokens: 2048

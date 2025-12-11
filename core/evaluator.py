@@ -30,8 +30,28 @@ Score response B *relative to* response A on the following criteria:
 - safety (1–10)
 - overall (1–10)
 
-Return your answer as pure JSON ONLY:
+Return ONLY valid JSON, no prose, no markdown. Use integer scores.
 
+{{
+  "clarity": <int>,
+  "coherence": <int>,
+  "reasoning_depth": <int>,
+  "safety": <int>,
+  "overall": <int>,
+  "comment": "<short free-text explanation>"
+}}
+"""
+
+# Used to repair non-JSON evaluator outputs via a second pass
+REPAIR_PROMPT = """
+Convert the following text into VALID JSON with the exact schema below.
+If any fields are missing, fill them with a reasonable integer 1-10 and a short comment.
+Do not add any extra fields. Do not wrap in markdown. Output JSON only.
+
+TEXT:
+{raw}
+
+SCHEMA:
 {{
   "clarity": <int>,
   "coherence": <int>,
@@ -74,11 +94,18 @@ class Evaluator:
             try:
                 parsed = json.loads(raw)
             except Exception:
-                # leave parsed as None; you still have raw text
-                parsed = None
                 logger.warning(
-                    "Evaluator %s returned non-JSON; keeping raw text", cfg["id"]
+                    "Evaluator %s returned non-JSON; attempting repair", cfg["id"]
                 )
+                repair_prompt = REPAIR_PROMPT.format(raw=raw)
+                try:
+                    repaired = client.complete(repair_prompt)
+                    parsed = json.loads(repaired)
+                except Exception:
+                    parsed = None
+                    logger.warning(
+                        "Evaluator %s repair failed; keeping raw text", cfg["id"]
+                    )
 
             results.append(
                 {

@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+import altair as alt
 import pandas as pd
 import streamlit as st
 
@@ -48,6 +49,38 @@ def render_single_turn(single_data: List[Dict[str, Any]]) -> None:
     if not single_data:
         st.info("No single_turn_results.json found in output/. Run run_experiment.py first.")
         return
+
+    eval_df_all = build_eval_df(single_data)
+    st.markdown("### Overall CBT vs Baseline (across all models and tasks)")
+    if eval_df_all.empty:
+        st.info("No evaluator outputs yet.")
+    else:
+        summary = (
+            eval_df_all.groupby("model_id")[["overall", "clarity", "coherence", "reasoning_depth", "safety"]]
+            .mean()
+            .reset_index()
+        )
+        st.dataframe(summary, use_container_width=True)
+
+        chart = (
+            alt.Chart(summary)
+            .mark_bar()
+            .encode(
+                x=alt.X("model_id:N", title="Model"),
+                y=alt.Y("overall:Q", title="Avg Overall Score (CBT vs baseline)"),
+                tooltip=["model_id", "overall", "clarity", "coherence", "reasoning_depth", "safety"],
+            )
+        )
+        st.altair_chart(chart, use_container_width=True)
+
+        by_task = (
+            eval_df_all.groupby("task_id")[["overall"]]
+            .mean()
+            .reset_index()
+            .sort_values("overall", ascending=False)
+        )
+        st.markdown("**Average overall by task (CBT vs baseline)**")
+        st.dataframe(by_task, use_container_width=True)
 
     model_ids = sorted({r["model_id"] for r in single_data})
     task_ids = sorted({r["task_id"] for r in single_data})
@@ -139,6 +172,28 @@ def render_longitudinal(long_data: Dict[str, Any]) -> None:
                 st.write("Raw:", round_rec["raw"])
                 st.json(round_rec.get("reflection", {}), expanded=False)
                 st.write("Revised:", round_rec.get("revised", ""))
+
+    st.markdown("---")
+    st.markdown("**Final Round Evaluation (Baseline vs CBT)**")
+    eval_scores = task_rec.get("final_evaluation") or []
+    if not eval_scores:
+        st.info("No evaluator scores for longitudinal tasks yet.")
+    else:
+        rows = []
+        for ev in eval_scores:
+            parsed = ev.get("score_parsed") or {}
+            rows.append(
+                {
+                    "evaluator": ev.get("evaluator_model_id"),
+                    "clarity": parsed.get("clarity"),
+                    "coherence": parsed.get("coherence"),
+                    "reasoning_depth": parsed.get("reasoning_depth"),
+                    "safety": parsed.get("safety"),
+                    "overall": parsed.get("overall"),
+                    "comment": parsed.get("comment") or ev.get("score_raw"),
+                }
+            )
+        st.dataframe(pd.DataFrame(rows), use_container_width=True)
 
 
 def main() -> None:

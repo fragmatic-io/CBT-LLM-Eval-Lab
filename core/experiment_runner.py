@@ -1,6 +1,7 @@
 from typing import Any, Dict, List
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 
 from core.llm_client import LLMClient
 from core.cbt_agent import CBTAgent
@@ -43,7 +44,8 @@ class ExperimentRunner:
         raw = llm.complete(task["prompt"])
         reflection = cbt.evaluate(raw)
         revision_prompt = cbt.build_revision_prompt(
-            reflection.get("revision_instruction", "")
+            revision_instruction=reflection.get("revision_instruction", ""),
+            previous_answer=raw,
         )
         revised = llm.complete(revision_prompt)
 
@@ -67,8 +69,12 @@ class ExperimentRunner:
         - CBT condition outputs (raw, reflection, revised)
         """
         all_results: List[Dict[str, Any]] = []
+        total_tasks = len(self.tasks) * len(self.client_model_configs)
+        completed_tasks = 0
+        progress_lock = threading.Lock()
 
         def run_for_model(model_cfg: Dict[str, Any]) -> List[Dict[str, Any]]:
+            nonlocal completed_tasks
             logger.info("Running single-turn tasks for model: %s", model_cfg["id"])
             model_results: List[Dict[str, Any]] = []
 
@@ -88,6 +94,19 @@ class ExperimentRunner:
                         },
                     }
                 )
+
+                with progress_lock:
+                    nonlocal completed_tasks
+                    completed_tasks += 1
+                    pct = (completed_tasks / total_tasks) * 100
+                    logger.info(
+                        "Task progress: %.1f%% (%d/%d) model=%s task=%s",
+                        pct,
+                        completed_tasks,
+                        total_tasks,
+                        model_cfg["id"],
+                        task["id"],
+                    )
 
             return model_results
 

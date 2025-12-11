@@ -1,5 +1,6 @@
 import json
 import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
@@ -63,21 +64,40 @@ def main() -> None:
 
     evaluator = Evaluator(config["evaluator_models"])
 
-    # attach evaluator scores for each (model, task)
-    for rec in results:
-        baseline_text = rec["condition_results"]["baseline"]
-        cbt_text = rec["condition_results"]["cbt"]["revised"]
-        try:
-            scores = evaluator.score_pair(baseline_text, cbt_text)
-        except Exception as exc:  # noqa: BLE001
-            logging.error(
-                "Evaluator scoring failed for model=%s task=%s: %s",
-                rec["model_id"],
-                rec["task_id"],
-                exc,
+    # attach evaluator scores for each (model, task) in parallel
+    with ThreadPoolExecutor(max_workers=32) as executor:
+        future_to_idx = {
+            executor.submit(
+                evaluator.score_pair,
+                rec["condition_results"]["baseline"],
+                rec["condition_results"]["cbt"]["revised"],
+            ): i
+            for i, rec in enumerate(results)
+        }
+
+        total = len(future_to_idx)
+        completed = 0
+        for fut in as_completed(future_to_idx):
+            idx = future_to_idx[fut]
+            rec = results[idx]
+            try:
+                scores = fut.result()
+            except Exception as exc:  # noqa: BLE001
+                logging.error(
+                    "Evaluator scoring failed for model=%s task=%s: %s",
+                    rec["model_id"],
+                    rec["task_id"],
+                    exc,
+                )
+                scores = []
+            rec["evaluation"] = scores
+            completed += 1
+            logging.info(
+                "Evaluator progress: %s/%s (%.0f%%)",
+                completed,
+                total,
+                (completed / total) * 100,
             )
-            scores = []
-        rec["evaluation"] = scores
 
     out_path = output_dir / "single_turn_results.json"
     with open(out_path, "w", encoding="utf-8") as f:
