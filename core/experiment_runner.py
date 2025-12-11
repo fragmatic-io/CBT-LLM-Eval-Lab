@@ -1,5 +1,6 @@
 from typing import Any, Dict, List
 import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from core.llm_client import LLMClient
 from core.cbt_agent import CBTAgent
@@ -67,14 +68,15 @@ class ExperimentRunner:
         """
         all_results: List[Dict[str, Any]] = []
 
-        for model_cfg in self.client_model_configs:
+        def run_for_model(model_cfg: Dict[str, Any]) -> List[Dict[str, Any]]:
             logger.info("Running single-turn tasks for model: %s", model_cfg["id"])
+            model_results: List[Dict[str, Any]] = []
 
             for task in self.tasks:
                 baseline = self.run_baseline(model_cfg, task)
                 cbt_output = self.run_cbt(model_cfg, task)
 
-                all_results.append(
+                model_results.append(
                     {
                         "model_id": model_cfg["id"],
                         "model_name": model_cfg["name"],
@@ -86,5 +88,15 @@ class ExperimentRunner:
                         },
                     }
                 )
+
+            return model_results
+
+        with ThreadPoolExecutor(max_workers=len(self.client_model_configs)) as executor:
+            future_to_model = {
+                executor.submit(run_for_model, cfg): cfg for cfg in self.client_model_configs
+            }
+            for fut in as_completed(future_to_model):
+                results = fut.result()
+                all_results.extend(results)
 
         return all_results

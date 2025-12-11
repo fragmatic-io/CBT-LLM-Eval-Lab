@@ -362,3 +362,23 @@
 2025-12-11 14:00:52,668 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
 2025-12-11 14:01:07,909 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L1 condition=baseline
 2025-12-11 14:01:07,910 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:01:27,039 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L1 condition=cbt
+2025-12-11 14:01:27,039 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:01:37,408 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:01:37,409 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:01:43,370 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:02:00,843 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L1 condition=cbt
+2025-12-11 14:02:00,844 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:02:17,777 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:02:17,778 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:02:21,496 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:02:34,454 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L1 condition=cbt
+2025-12-11 14:02:34,454 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:02:55,373 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:02:55,373 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:02:59,429 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:03:10,692 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L1 condition=cbt
+2025-12-11 14:03:10,692 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:03:26,545 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:03:26,546 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:03:30,642 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
