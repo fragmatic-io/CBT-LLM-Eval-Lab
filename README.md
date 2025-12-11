@@ -126,5 +126,20 @@ Adjust IDs/names to match available OpenRouter models. Temperatures and token li
 - Non-JSON evaluator/CBT outputs: check logs; raw text is preserved, and CBT auto-repair attempts JSON fix.
 - API failures/throttling: LLM client retries up to 3 times; see logs in `output/`.
 
+## Quick Results (latest committed run)
+- **Single-turn (simple + advanced)**: avg relative lift ≈ **5.88/10** (≈59% of max). Model lift means: GPT5.1 ~7.5, Claude 4.5 ~6.4, Gemini 3 Pro ~5.4, Kimi K2 ~4.2.
+- **Longitudinal**: avg relative lift ≈ **3.8/10** (≈38% of max). Model lift means: Claude 4.5 ~4.4, GPT5.1 ~4.2, Gemini 3 Pro ~3.8, Kimi K2 ~2.8. Task-wise, L5 and L1 benefit most; L2 is weakest.
+
+## Visual Snapshots
+Head-to-head CBT vs baseline charts from the Streamlit dashboard (latest run):
+
+![Single-turn summary](results/Screenshot%202025-12-11%20at%203.25.02%E2%80%AFPM.png)
+
+![Heatmaps and deltas](results/Screenshot%202025-12-11%20at%203.25.11%E2%80%AFPM.png)
+
+![Longitudinal overview](results/Screenshot%202025-12-11%20at%203.25.18%E2%80%AFPM.png)
+
+![Longitudinal drilldown](results/Screenshot%202025-12-11%20at%203.25.28%E2%80%AFPM.png)
+
 ## Notes on Keys and Secrets
 - Keep `.env` out of version control. Only `OPENROUTER_API_KEY` is required for these runs.
