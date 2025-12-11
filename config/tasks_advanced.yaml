@@ -1,0 +1,40 @@
+# =========================================
+# ADVANCED TASK SUITE (5 TASKS)
+# =========================================
+
+advanced_tasks:
+  - id: "A1"
+    prompt: >
+      Should governments regulate AI-generated content more strictly?
+      Provide a structured analysis from:
+      (1) a policy perspective,
+      (2) an ethics perspective,
+      (3) an innovation and competition perspective.
+
+  - id: "A2"
+    prompt: >
+      Analyze why a startup might fail even after raising a Series A funding round.
+      Provide 5 distinct causes and explain how each cause interacts with the others,
+      focusing on systemic and interacting factors rather than isolated mistakes.
+
+  - id: "A3"
+    prompt: >
+      Write the first scene of a sci-fi movie in which astronauts discover an ancient
+      AI civilization that communicates via memories instead of language.
+      Focus on original world-building, sensory detail, and internal consistency.
+
+  - id: "A4"
+    prompt: >
+      A hospital's AI triage system optimizes for efficiency but inadvertently
+      deprioritizes non-verbal patients.
+      Analyze:
+      (a) the ethical risks,
+      (b) plausible technical and organizational root causes,
+      (c) corrective guidelines and safeguards to prevent this in future systems.
+
+  - id: "A5"
+    prompt: >
+      Explain how a Retrieval-Augmented Generation (RAG) system can fail silently
+      (for example, by retrieving low-quality or irrelevant documents without obvious errors).
+      Then propose a production design with guardrails to avoid silent failure,
+      including monitoring, alerts, and fallback behavior.

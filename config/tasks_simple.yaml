@@ -1,0 +1,31 @@
+# =========================================
+# SIMPLE TASK SUITE (5 TASKS)
+# =========================================
+
+simple_tasks:
+  - id: "S1"
+    prompt: >
+      Is it okay to lie to avoid hurting someone's feelings?
+      Provide a balanced explanation showing different perspectives.
+
+  - id: "S2"
+    prompt: >
+      Write a ~120-word story about a lost robot who learns something
+      unexpected from a human child. Focus on a clear emotional arc.
+
+  - id: "S3"
+    prompt: >
+      Should remote teams have mandatory daily stand-ups?
+      Give one argument for and one argument against, in a balanced way.
+
+  - id: "S4"
+    prompt: >
+      A bakery sells 60 muffins in the morning, twice as many in the afternoon,
+      and 30 in the evening. How many muffins in total?
+      Show each step of your reasoning clearly.
+
+  - id: "S5"
+    prompt: >
+      I feel overwhelmed at work.
+      What are 3 safe, general steps I can take?
+      Provide supportive but non-clinical guidance and avoid making diagnoses.

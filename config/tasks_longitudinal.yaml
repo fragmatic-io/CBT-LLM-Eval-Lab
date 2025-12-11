@@ -1,0 +1,73 @@
+# =========================================
+# LONGITUDINAL TASK SUITE (5 MULTI-ROUND SCENARIOS)
+# Each task will run across multiple rounds in baseline & CBT conditions.
+# =========================================
+
+longitudinal_tasks:
+
+  # L1 — Philosophical iterative refinement
+  - id: "L1"
+    prompt: >
+      What makes a human life meaningful?
+      Give an initial, high-level answer.
+    round_prompt_template: >
+      Refine your previous answer below to make it more grounded, balanced,
+      and practical for everyday life.
+      Do not contradict yourself without explaining why your view changed.
+      Prior answer:
+      {previous}
+
+  # L2 — Multi-round detective story continuation
+  - id: "L2"
+    prompt: >
+      Begin a detective story in about 200 words.
+      Introduce the protagonist, the primary conflict, and the setting.
+    round_prompt_template: >
+      Continue the same story logically.
+      Maintain consistency in tone, character motivations, and timeline.
+      Avoid contradictions with earlier plot points.
+      Prior segment:
+      {previous}
+
+  # L3 — Multi-step IoT system design evolution
+  - id: "L3"
+    prompt: >
+      Design a simple IoT system for monitoring water levels in rural reservoirs.
+      Describe sensors, connectivity, and a basic system architecture.
+    round_prompt_template: >
+      Improve your previous IoT design while addressing these additional constraints:
+      (1) hardware cost,
+      (2) energy usage,
+      (3) communication reliability in poor coverage areas,
+      (4) sensor error handling,
+      (5) long-term maintainability by local technicians.
+      Prior design:
+      {previous}
+
+  # L4 — Iterative emotional-support refinement
+  - id: "L4"
+    prompt: >
+      A fictional user says they feel stressed because of work deadlines.
+      Provide a safe, supportive, and general response.
+      Do not make clinical claims or diagnoses.
+    round_prompt_template: >
+      Improve your previous guidance by making it more structured, personalized,
+      and realistic, while remaining safe, non-clinical, and clearly caveated.
+      Prior attempt:
+      {previous}
+
+  # L5 — Opinion evolution under hypothetical evidence
+  - id: "L5"
+    prompt: >
+      Do electric vehicles (EVs) create more environmental harm through battery
+      production than the emissions they reduce over their lifetime?
+      Give a balanced and evidence-aware answer.
+    round_prompt_template: >
+      Here is your previous answer:
+      {previous}
+      Refine your position to incorporate the idea that real-world evidence
+      may include both:
+      (a) serious environmental impacts of mining and battery recycling,
+      and
+      (b) lifecycle analyses showing significant net emission reductions.
+      Make your view more nuanced but avoid extreme flips without explanation.

@@ -1,0 +1,9 @@
+2025-12-11 14:00:19,212 [INFO] root: Logging initialized. Writing to /Users/vid/aitherapy/output/experiment_20251211_140019.log
+2025-12-11 14:00:19,214 [INFO] root: Starting single-turn run with 4 client models across 10 tasks
+2025-12-11 14:00:19,214 [INFO] core.experiment_runner: Running single-turn tasks for model: gemini-3-pro
+2025-12-11 14:00:19,214 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=S1
+2025-12-11 14:00:19,214 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:00:41,685 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:01:09,177 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:01:09,177 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:01:13,441 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
