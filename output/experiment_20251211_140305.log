@@ -89,3 +89,20 @@
 2025-12-11 14:04:20,945 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
 2025-12-11 14:04:25,721 [INFO] core.cbt_agent: Running CBT evaluation on agent output
 2025-12-11 14:04:25,721 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:04:27,217 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:04:28,708 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:04:31,629 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=A2 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats']
+2025-12-11 14:04:31,629 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=A3
+2025-12-11 14:04:31,629 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:04:33,675 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:04:33,675 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:04:34,948 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:04:36,750 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:04:37,721 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:04:43,174 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:04:43,174 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:04:46,323 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=S3 distortions=['overgeneralization', 'black-and-white (all-or-nothing) thinking', 'oversimplified or shallow explanations']
+2025-12-11 14:04:46,323 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=S4
+2025-12-11 14:04:46,323 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:04:51,144 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:04:51,144 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
