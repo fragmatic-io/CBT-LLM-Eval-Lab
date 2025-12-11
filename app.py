@@ -28,19 +28,48 @@ def build_eval_df(records: List[Dict[str, Any]]) -> pd.DataFrame:
         evals = rec.get("evaluation", []) or []
         for ev in evals:
             parsed = ev.get("score_parsed") or {}
+            overall = parsed.get("overall")
             rows.append(
                 {
                     "model_id": rec.get("model_id"),
+                    "model_name": rec.get("model_name"),
                     "task_id": rec.get("task_id"),
                     "evaluator": ev.get("evaluator_model_id"),
                     "clarity": parsed.get("clarity"),
                     "coherence": parsed.get("coherence"),
                     "reasoning_depth": parsed.get("reasoning_depth"),
                     "safety": parsed.get("safety"),
-                    "overall": parsed.get("overall"),
+                    "overall": overall,
+                    "lift_pct": (overall / 10 * 100) if overall is not None else None,
                     "comment": parsed.get("comment") or ev.get("score_raw"),
                 }
             )
+    return pd.DataFrame(rows)
+
+
+def build_long_eval_df(long_data: Dict[str, Any]) -> pd.DataFrame:
+    rows: List[Dict[str, Any]] = []
+    for model_id, rec in long_data.items():
+        model_name = rec.get("model_name")
+        for task_id, task_rec in rec.get("tasks", {}).items():
+            for ev in task_rec.get("final_evaluation", []) or []:
+                parsed = ev.get("score_parsed") or {}
+                overall = parsed.get("overall")
+                rows.append(
+                    {
+                        "model_id": model_id,
+                        "model_name": model_name,
+                        "task_id": task_id,
+                        "evaluator": ev.get("evaluator_model_id"),
+                        "clarity": parsed.get("clarity"),
+                        "coherence": parsed.get("coherence"),
+                        "reasoning_depth": parsed.get("reasoning_depth"),
+                        "safety": parsed.get("safety"),
+                        "overall": overall,
+                        "lift_pct": (overall / 10 * 100) if overall is not None else None,
+                        "comment": parsed.get("comment") or ev.get("score_raw"),
+                    }
+                )
     return pd.DataFrame(rows)
 
 
@@ -55,8 +84,14 @@ def render_single_turn(single_data: List[Dict[str, Any]]) -> None:
     if eval_df_all.empty:
         st.info("No evaluator outputs yet.")
     else:
+        overall_mean = eval_df_all["overall"].mean()
+        lift_pct_mean = eval_df_all["lift_pct"].mean()
+        col_a, col_b = st.columns(2)
+        col_a.metric("Avg relative overall (0-10)", f"{overall_mean:.2f}")
+        col_b.metric("Avg lift (% of max)", f"{lift_pct_mean:.1f}%")
+
         summary = (
-            eval_df_all.groupby("model_id")[["overall", "clarity", "coherence", "reasoning_depth", "safety"]]
+            eval_df_all.groupby("model_id")[["overall", "clarity", "coherence", "reasoning_depth", "safety", "lift_pct"]]
             .mean()
             .reset_index()
         )
@@ -74,13 +109,94 @@ def render_single_turn(single_data: List[Dict[str, Any]]) -> None:
         st.altair_chart(chart, use_container_width=True)
 
         by_task = (
-            eval_df_all.groupby("task_id")[["overall"]]
+            eval_df_all.groupby("task_id")[["overall", "lift_pct"]]
             .mean()
             .reset_index()
             .sort_values("overall", ascending=False)
         )
         st.markdown("**Average overall by task (CBT vs baseline)**")
         st.dataframe(by_task, use_container_width=True)
+
+        st.markdown("**Heatmap: Model × Task (overall score)**")
+        model_task = (
+            eval_df_all.groupby(["model_id", "task_id"])[["overall", "lift_pct"]]
+            .mean()
+            .reset_index()
+        )
+        heatmap = (
+            alt.Chart(model_task)
+            .mark_rect()
+            .encode(
+                x=alt.X("task_id:N", title="Task"),
+                y=alt.Y("model_id:N", title="Model"),
+                color=alt.Color("overall:Q", title="Overall", scale=alt.Scale(scheme="blues")),
+                tooltip=["model_id", "task_id", "overall"],
+            )
+        )
+        st.altair_chart(heatmap, use_container_width=True)
+
+        st.markdown("**Distribution of overall scores (all models, tasks, evaluators)**")
+        box = (
+            alt.Chart(eval_df_all)
+            .mark_boxplot()
+            .encode(x=alt.X("model_id:N", title="Model"), y=alt.Y("overall:Q"))
+        )
+        st.altair_chart(box, use_container_width=True)
+
+        st.markdown("**Average overall by evaluator**")
+        by_eval = (
+            eval_df_all.groupby("evaluator")[["overall"]]
+            .mean()
+            .reset_index()
+            .sort_values("overall", ascending=False)
+        )
+        st.dataframe(by_eval, use_container_width=True)
+        eval_bar = (
+            alt.Chart(by_eval)
+            .mark_bar()
+            .encode(x=alt.X("evaluator:N", title="Evaluator"), y=alt.Y("overall:Q"))
+        )
+        st.altair_chart(eval_bar, use_container_width=True)
+
+        st.markdown("### Delta view (CBT lift vs baseline)")
+        # Scores are already relative (CBT vs baseline), so treat them as the delta
+        delta_model = (
+            eval_df_all.groupby("model_id")[["overall", "lift_pct"]]
+            .mean()
+            .reset_index()
+            .sort_values("overall", ascending=False)
+        )
+        st.markdown("**CBT lift by model (mean relative overall score and % of max)**")
+        st.dataframe(delta_model, use_container_width=True)
+        delta_chart = (
+            alt.Chart(delta_model)
+            .mark_bar()
+            .encode(
+                x=alt.X("model_id:N", title="Model"),
+                y=alt.Y("overall:Q", title="Relative overall (CBT vs baseline)"),
+                tooltip=["model_id", "overall", "lift_pct"],
+            )
+        )
+        st.altair_chart(delta_chart, use_container_width=True)
+
+        delta_task = (
+            eval_df_all.groupby("task_id")[["overall", "lift_pct"]]
+            .mean()
+            .reset_index()
+            .sort_values("overall", ascending=False)
+        )
+        st.markdown("**CBT lift by task (mean relative overall score and % of max)**")
+        st.dataframe(delta_task, use_container_width=True)
+        delta_task_chart = (
+            alt.Chart(delta_task)
+            .mark_bar()
+            .encode(
+                x=alt.X("task_id:N", title="Task"),
+                y=alt.Y("overall:Q", title="Relative overall (CBT vs baseline)"),
+                tooltip=["task_id", "overall", "lift_pct"],
+            )
+        )
+        st.altair_chart(delta_task_chart, use_container_width=True)
 
     model_ids = sorted({r["model_id"] for r in single_data})
     task_ids = sorted({r["task_id"] for r in single_data})
@@ -144,6 +260,72 @@ def render_longitudinal(long_data: Dict[str, Any]) -> None:
     if not long_data:
         st.info("No longitudinal_results.json found in output/. Run run_longitudinal.py first.")
         return
+
+    eval_df_all = build_long_eval_df(long_data)
+    st.markdown("### Overall CBT vs Baseline (final round comparison)")
+    if eval_df_all.empty:
+        st.info("No evaluator outputs yet.")
+    else:
+        overall_mean = eval_df_all["overall"].mean()
+        lift_pct_mean = eval_df_all["lift_pct"].mean()
+        col_a, col_b = st.columns(2)
+        col_a.metric("Avg relative overall (0-10)", f"{overall_mean:.2f}")
+        col_b.metric("Avg lift (% of max)", f"{lift_pct_mean:.1f}%")
+
+        summary = (
+            eval_df_all.groupby("model_id")[["overall", "clarity", "coherence", "reasoning_depth", "safety", "lift_pct"]]
+            .mean()
+            .reset_index()
+        )
+        st.dataframe(summary, use_container_width=True)
+
+        chart = (
+            alt.Chart(summary)
+            .mark_bar()
+            .encode(
+                x=alt.X("model_id:N", title="Model"),
+                y=alt.Y("overall:Q", title="Avg Overall Score"),
+                tooltip=["model_id", "overall", "clarity", "coherence", "reasoning_depth", "safety"],
+            )
+        )
+        st.altair_chart(chart, use_container_width=True)
+
+        st.markdown("### Delta view (CBT lift vs baseline, final round)")
+        delta_model = (
+            eval_df_all.groupby("model_id")[["overall"]]
+            .mean()
+            .reset_index()
+            .sort_values("overall", ascending=False)
+        )
+        st.dataframe(delta_model, use_container_width=True)
+        delta_chart = (
+            alt.Chart(delta_model)
+            .mark_bar()
+            .encode(
+                x=alt.X("model_id:N", title="Model"),
+                y=alt.Y("overall:Q", title="Relative overall (CBT vs baseline)"),
+                tooltip=["model_id", "overall"],
+            )
+        )
+        st.altair_chart(delta_chart, use_container_width=True)
+
+        st.markdown("**Heatmap: Model × Task (overall score)**")
+        model_task = (
+            eval_df_all.groupby(["model_id", "task_id"])[["overall", "lift_pct"]]
+            .mean()
+            .reset_index()
+        )
+        heatmap = (
+            alt.Chart(model_task)
+            .mark_rect()
+            .encode(
+                x=alt.X("task_id:N", title="Task"),
+                y=alt.Y("model_id:N", title="Model"),
+                color=alt.Color("overall:Q", scale=alt.Scale(scheme="greens")),
+                tooltip=["model_id", "task_id", "overall"],
+            )
+        )
+        st.altair_chart(heatmap, use_container_width=True)
 
     model_ids = sorted(long_data.keys())
     model_choice = st.selectbox("Model", model_ids)

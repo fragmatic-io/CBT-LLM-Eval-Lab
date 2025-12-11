@@ -1,0 +1,790 @@
+2025-12-11 14:59:44,313 [INFO] root: Logging initialized. Writing to /Users/vid/aitherapy/output/longitudinal_20251211_145944.log
+2025-12-11 14:59:44,315 [INFO] root: Running longitudinal task concurrently: model=gemini-3-pro task=L1
+2025-12-11 14:59:44,315 [INFO] root: Running longitudinal task concurrently: model=gemini-3-pro task=L2
+2025-12-11 14:59:44,315 [INFO] root: Running longitudinal task concurrently: model=gemini-3-pro task=L3
+2025-12-11 14:59:44,315 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L1 condition=baseline
+2025-12-11 14:59:44,315 [INFO] root: Running longitudinal task concurrently: model=gemini-3-pro task=L4
+2025-12-11 14:59:44,315 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L2 condition=baseline
+2025-12-11 14:59:44,315 [INFO] root: Running longitudinal task concurrently: model=gemini-3-pro task=L5
+2025-12-11 14:59:44,315 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L3 condition=baseline
+2025-12-11 14:59:44,315 [INFO] root: Running longitudinal task concurrently: model=GPT5.1 task=L1
+2025-12-11 14:59:44,315 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:59:44,315 [INFO] root: Running longitudinal task concurrently: model=GPT5.1 task=L2
+2025-12-11 14:59:44,315 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L4 condition=baseline
+2025-12-11 14:59:44,315 [INFO] root: Running longitudinal task concurrently: model=GPT5.1 task=L3
+2025-12-11 14:59:44,315 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:59:44,315 [INFO] root: Running longitudinal task concurrently: model=GPT5.1 task=L4
+2025-12-11 14:59:44,315 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L5 condition=baseline
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=GPT5.1 task=L5
+2025-12-11 14:59:44,316 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:59:44,316 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L1 condition=baseline
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=kimik2 task=L1
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=kimik2 task=L2
+2025-12-11 14:59:44,316 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L2 condition=baseline
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=kimik2 task=L3
+2025-12-11 14:59:44,316 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=kimik2 task=L4
+2025-12-11 14:59:44,316 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L3 condition=baseline
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=kimik2 task=L5
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=claude4.5 task=L1
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=claude4.5 task=L2
+2025-12-11 14:59:44,316 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L4 condition=baseline
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=claude4.5 task=L3
+2025-12-11 14:59:44,316 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=claude4.5 task=L4
+2025-12-11 14:59:44,316 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L5 condition=baseline
+2025-12-11 14:59:44,316 [INFO] root: Running longitudinal task concurrently: model=claude4.5 task=L5
+2025-12-11 14:59:44,317 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:44,317 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L1 condition=baseline
+2025-12-11 14:59:44,317 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L2 condition=baseline
+2025-12-11 14:59:44,317 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:44,317 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L3 condition=baseline
+2025-12-11 14:59:44,317 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L4 condition=baseline
+2025-12-11 14:59:44,317 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:44,317 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L5 condition=baseline
+2025-12-11 14:59:44,318 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L1 condition=baseline
+2025-12-11 14:59:44,318 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L2 condition=baseline
+2025-12-11 14:59:44,318 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:44,318 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L3 condition=baseline
+2025-12-11 14:59:44,318 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L4 condition=baseline
+2025-12-11 14:59:44,318 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:44,318 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L5 condition=baseline
+2025-12-11 14:59:44,318 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:44,318 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:44,318 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:44,318 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:44,319 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:44,319 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:44,319 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:44,320 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:44,320 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:44,320 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:47,894 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L1 condition=baseline
+2025-12-11 14:59:47,894 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:47,916 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L4 condition=baseline
+2025-12-11 14:59:47,916 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:48,819 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L3 condition=baseline
+2025-12-11 14:59:48,819 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:49,415 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L5 condition=baseline
+2025-12-11 14:59:49,415 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:50,267 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L2 condition=baseline
+2025-12-11 14:59:50,268 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:52,150 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L1 condition=baseline
+2025-12-11 14:59:52,151 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:52,418 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L4 condition=baseline
+2025-12-11 14:59:52,419 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:52,881 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L5 condition=baseline
+2025-12-11 14:59:52,882 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:54,089 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L4 condition=baseline
+2025-12-11 14:59:54,089 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:54,602 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L1 condition=baseline
+2025-12-11 14:59:54,602 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:55,440 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L2 condition=baseline
+2025-12-11 14:59:55,440 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:55,607 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L4 condition=baseline
+2025-12-11 14:59:55,607 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:55,798 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L1 condition=baseline
+2025-12-11 14:59:55,798 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:55,898 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L3 condition=baseline
+2025-12-11 14:59:55,898 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:56,132 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L4 condition=baseline
+2025-12-11 14:59:56,132 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:59:56,732 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L5 condition=baseline
+2025-12-11 14:59:56,732 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:57,192 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L1 condition=baseline
+2025-12-11 14:59:57,192 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:57,636 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L4 condition=baseline
+2025-12-11 14:59:57,636 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:58,143 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L2 condition=baseline
+2025-12-11 14:59:58,143 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:59,221 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L5 condition=baseline
+2025-12-11 14:59:59,221 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:59,732 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L5 condition=baseline
+2025-12-11 14:59:59,732 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:00,432 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L2 condition=baseline
+2025-12-11 15:00:00,432 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:00:01,305 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L1 condition=baseline
+2025-12-11 15:00:01,305 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:01,687 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L1 condition=baseline
+2025-12-11 15:00:01,687 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:01,799 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L3 condition=baseline
+2025-12-11 15:00:01,800 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:02,497 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L2 condition=baseline
+2025-12-11 15:00:02,497 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:04,165 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L5 condition=cbt
+2025-12-11 15:00:04,165 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:04,304 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L2 condition=baseline
+2025-12-11 15:00:04,304 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:05,117 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L4 condition=baseline
+2025-12-11 15:00:05,117 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:07,340 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L1 condition=cbt
+2025-12-11 15:00:07,340 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:08,275 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L2 condition=baseline
+2025-12-11 15:00:08,276 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:08,353 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L3 condition=baseline
+2025-12-11 15:00:08,353 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:08,847 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L3 condition=baseline
+2025-12-11 15:00:08,848 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:09,134 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:09,134 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:09,332 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:09,332 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:10,264 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L4 condition=cbt
+2025-12-11 15:00:10,264 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:11,232 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:11,235 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L5 condition=baseline
+2025-12-11 15:00:11,235 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:12,280 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:12,280 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:12,854 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L1 condition=baseline
+2025-12-11 15:00:12,854 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:00:12,994 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L1 condition=cbt
+2025-12-11 15:00:12,994 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:13,033 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L4 condition=baseline
+2025-12-11 15:00:13,033 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:13,219 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L4 condition=baseline
+2025-12-11 15:00:13,219 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:00:13,358 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:13,949 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L2 condition=cbt
+2025-12-11 15:00:13,950 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:15,159 [INFO] core.longitudinal_runner: Round 1/5: model=GPT5.1 task=L3 condition=cbt
+2025-12-11 15:00:15,159 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:16,147 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:16,769 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:16,770 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:16,886 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L1 condition=baseline
+2025-12-11 15:00:16,887 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:17,946 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:17,947 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:18,534 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:18,534 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:18,664 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L5 condition=cbt
+2025-12-11 15:00:18,664 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:19,076 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L4 condition=cbt
+2025-12-11 15:00:19,076 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:20,399 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L2 condition=baseline
+2025-12-11 15:00:20,399 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:20,940 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:21,484 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:21,978 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:22,288 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:22,288 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:22,340 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L5 condition=baseline
+2025-12-11 15:00:22,340 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:23,975 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L3 condition=cbt
+2025-12-11 15:00:23,976 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:24,493 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L1 condition=baseline
+2025-12-11 15:00:24,495 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:25,136 [INFO] core.longitudinal_runner: Round 2/5: model=GPT5.1 task=L2 condition=cbt
+2025-12-11 15:00:25,136 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:25,487 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:25,493 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:25,493 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:25,704 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L1 condition=cbt
+2025-12-11 15:00:25,705 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:25,811 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L4 condition=baseline
+2025-12-11 15:00:25,811 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:28,461 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:28,927 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L3 condition=baseline
+2025-12-11 15:00:28,927 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:29,044 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:29,044 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:30,226 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L5 condition=cbt
+2025-12-11 15:00:30,226 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:30,230 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:30,230 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:30,503 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:30,504 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:30,682 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L1 condition=baseline
+2025-12-11 15:00:30,682 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:00:31,421 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L2 condition=baseline
+2025-12-11 15:00:31,421 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:32,580 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L3 condition=baseline
+2025-12-11 15:00:32,580 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:32,670 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:33,162 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:33,339 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:34,461 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:34,461 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:34,890 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L5 condition=baseline
+2025-12-11 15:00:34,891 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:38,450 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:39,143 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L1 condition=cbt
+2025-12-11 15:00:39,144 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:39,875 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L2 condition=cbt
+2025-12-11 15:00:39,876 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:40,995 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L1 condition=baseline
+2025-12-11 15:00:40,995 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:42,032 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L3 condition=cbt
+2025-12-11 15:00:42,032 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:43,678 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L5 condition=cbt
+2025-12-11 15:00:43,678 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:45,366 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:45,367 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:46,897 [INFO] core.longitudinal_runner: Round 3/5: model=GPT5.1 task=L4 condition=cbt
+2025-12-11 15:00:46,897 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:47,406 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:47,406 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:48,527 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L1 condition=baseline
+2025-12-11 15:00:48,527 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:48,967 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:48,967 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:49,266 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:49,354 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:49,354 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:50,566 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:51,393 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:52,476 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:53,282 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L1 condition=baseline
+2025-12-11 15:00:53,282 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:00:54,065 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:54,066 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:55,387 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L5 condition=cbt
+2025-12-11 15:00:55,387 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:55,459 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L2 condition=baseline
+2025-12-11 15:00:55,459 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:56,117 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L1 condition=cbt
+2025-12-11 15:00:56,117 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:57,548 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:58,749 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:58,749 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:58,867 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L4 condition=baseline
+2025-12-11 15:00:58,867 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:59,094 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L2 condition=cbt
+2025-12-11 15:00:59,094 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:00,827 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L3 condition=cbt
+2025-12-11 15:01:00,827 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:01,818 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L5 condition=baseline
+2025-12-11 15:01:01,818 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:02,130 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:02,936 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:02,936 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:04,174 [INFO] core.longitudinal_runner: Round 4/5: model=GPT5.1 task=L4 condition=cbt
+2025-12-11 15:01:04,174 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:06,270 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:06,819 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L5 condition=baseline
+2025-12-11 15:01:06,819 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:07,140 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L1 condition=baseline
+2025-12-11 15:01:07,140 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:07,624 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:07,625 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:08,324 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:08,324 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:08,722 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L4 condition=baseline
+2025-12-11 15:01:08,722 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:09,569 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:10,265 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:10,976 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:10,976 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:11,614 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:13,304 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L3 condition=baseline
+2025-12-11 15:01:13,304 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:14,131 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:14,268 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L3 condition=baseline
+2025-12-11 15:01:14,269 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:14,945 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L2 condition=baseline
+2025-12-11 15:01:14,945 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:15,157 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:17,106 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L5 condition=baseline
+2025-12-11 15:01:17,106 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:18,137 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L2 condition=cbt
+2025-12-11 15:01:18,138 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:20,970 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L4 condition=cbt
+2025-12-11 15:01:20,970 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:21,301 [INFO] core.longitudinal_runner: Round 5/5: model=GPT5.1 task=L3 condition=cbt
+2025-12-11 15:01:21,301 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:23,711 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L2 condition=baseline
+2025-12-11 15:01:23,712 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:24,759 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:24,759 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:25,180 [INFO] root: Longitudinal progress: 1/20 (5%)
+2025-12-11 15:01:26,297 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L1 condition=cbt
+2025-12-11 15:01:26,298 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:27,531 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L4 condition=baseline
+2025-12-11 15:01:27,531 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:27,568 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:28,279 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L1 condition=baseline
+2025-12-11 15:01:28,279 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:28,377 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L5 condition=baseline
+2025-12-11 15:01:28,377 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:28,983 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:28,983 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:31,055 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:31,055 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:31,382 [INFO] root: Longitudinal progress: 2/20 (10%)
+2025-12-11 15:01:31,745 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:34,147 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:34,208 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:34,257 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L2 condition=baseline
+2025-12-11 15:01:34,257 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:36,282 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:36,282 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:36,834 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L3 condition=baseline
+2025-12-11 15:01:36,834 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:38,386 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L2 condition=cbt
+2025-12-11 15:01:38,386 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:39,291 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:39,657 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:41,520 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L5 condition=baseline
+2025-12-11 15:01:41,520 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:42,172 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:43,777 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L1 condition=cbt
+2025-12-11 15:01:43,777 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:50,172 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L4 condition=baseline
+2025-12-11 15:01:50,173 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:51,376 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L4 condition=baseline
+2025-12-11 15:01:51,376 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:52,516 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:52,516 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:52,671 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L5 condition=baseline
+2025-12-11 15:01:52,671 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:52,923 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L1 condition=cbt
+2025-12-11 15:01:52,923 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:54,988 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L3 condition=baseline
+2025-12-11 15:01:54,988 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:55,291 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:57,967 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L1 condition=cbt
+2025-12-11 15:01:57,968 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:02:10,098 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:10,099 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:10,361 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L3 condition=cbt
+2025-12-11 15:02:10,361 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:12,267 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L1 condition=cbt
+2025-12-11 15:02:12,267 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:12,605 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L3 condition=baseline
+2025-12-11 15:02:12,606 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:02:15,088 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:18,338 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:18,338 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:20,841 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L5 condition=baseline
+2025-12-11 15:02:20,841 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:02:21,455 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:21,455 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:22,376 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:02:23,468 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:02:23,468 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:23,469 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L2 condition=cbt
+2025-12-11 15:02:23,470 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:25,072 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:02:25,072 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:25,722 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:28,918 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L4 condition=baseline
+2025-12-11 15:02:28,918 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:31,110 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L5 condition=cbt
+2025-12-11 15:02:31,110 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:33,145 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:33,145 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:33,349 [INFO] root: Longitudinal progress: 3/20 (15%)
+2025-12-11 15:02:33,828 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:33,828 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:34,893 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:34,893 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:36,022 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:02:36,022 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:36,166 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L3 condition=baseline
+2025-12-11 15:02:36,166 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:36,386 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L2 condition=cbt
+2025-12-11 15:02:36,387 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:37,328 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:37,658 [INFO] root: Longitudinal progress: 4/20 (20%)
+2025-12-11 15:02:37,982 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:43,634 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L3 condition=baseline
+2025-12-11 15:02:43,635 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:02:43,642 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:46,577 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L5 condition=baseline
+2025-12-11 15:02:46,577 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:02:46,750 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L5 condition=cbt
+2025-12-11 15:02:46,750 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:48,005 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L4 condition=cbt
+2025-12-11 15:02:48,005 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:49,300 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L2 condition=cbt
+2025-12-11 15:02:49,301 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:51,382 [INFO] root: Longitudinal progress: 5/20 (25%)
+2025-12-11 15:02:52,873 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L1 condition=cbt
+2025-12-11 15:02:52,873 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:02:53,647 [INFO] core.longitudinal_runner: Round 1/5: model=gemini-3-pro task=L4 condition=cbt
+2025-12-11 15:02:53,647 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:53,806 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:53,806 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:56,064 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:56,065 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:58,087 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L1 condition=cbt
+2025-12-11 15:02:58,088 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:58,942 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:00,068 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:00,679 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L1 condition=cbt
+2025-12-11 15:03:00,679 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:00,825 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:00,825 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:03,904 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:10,660 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L4 condition=cbt
+2025-12-11 15:03:10,661 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:10,942 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:10,942 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:14,038 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:14,038 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:14,541 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L3 condition=cbt
+2025-12-11 15:03:14,541 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:15,012 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L3 condition=baseline
+2025-12-11 15:03:15,012 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:15,154 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:15,307 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:15,307 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:16,690 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:17,306 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L5 condition=cbt
+2025-12-11 15:03:17,306 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:17,351 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:17,351 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:17,416 [INFO] core.longitudinal_runner: Round 1/5: model=claude4.5 task=L3 condition=cbt
+2025-12-11 15:03:17,417 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:18,644 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:20,694 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:22,715 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L5 condition=cbt
+2025-12-11 15:03:22,716 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:23,424 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L5 condition=cbt
+2025-12-11 15:03:23,424 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:31,241 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:31,242 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:31,600 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L2 condition=cbt
+2025-12-11 15:03:31,600 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:34,907 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:36,826 [INFO] core.longitudinal_runner: Round 2/5: model=gemini-3-pro task=L4 condition=cbt
+2025-12-11 15:03:36,826 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:37,110 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:37,110 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:37,677 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:37,677 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:38,598 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:38,598 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:39,720 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:41,232 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:41,340 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:41,340 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:41,766 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:43,581 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L2 condition=baseline
+2025-12-11 15:03:43,581 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:46,148 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:47,549 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:47,549 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:48,009 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L2 condition=cbt
+2025-12-11 15:03:48,009 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:51,421 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L1 condition=cbt
+2025-12-11 15:03:51,422 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:52,251 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:55,037 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L3 condition=baseline
+2025-12-11 15:03:55,038 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:56,144 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:56,144 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:57,550 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:57,550 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:58,044 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:58,044 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:59,904 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L4 condition=cbt
+2025-12-11 15:03:59,904 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:04:00,948 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:04:02,839 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:04:03,104 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:04:11,046 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L2 condition=baseline
+2025-12-11 15:04:11,046 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:12,868 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L1 condition=cbt
+2025-12-11 15:04:12,868 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:04:17,478 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L1 condition=cbt
+2025-12-11 15:04:17,478 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:04:17,495 [WARNING] core.llm_client: Attempt 1 failed for model anthropic/claude-sonnet-4.5: HTTPSConnectionPool(host='openrouter.ai', port=443): Read timed out. (read timeout=60)
+2025-12-11 15:04:19,268 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L5 condition=cbt
+2025-12-11 15:04:19,268 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:19,500 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 2)
+2025-12-11 15:04:20,120 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L5 condition=cbt
+2025-12-11 15:04:20,121 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:04:22,141 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:04:22,141 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:04:24,707 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:24,920 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L5 condition=cbt
+2025-12-11 15:04:24,920 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:04:25,423 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L4 condition=cbt
+2025-12-11 15:04:25,423 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:04:26,033 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L2 condition=cbt
+2025-12-11 15:04:26,033 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:04:26,653 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L3 condition=cbt
+2025-12-11 15:04:26,653 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:26,730 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L4 condition=cbt
+2025-12-11 15:04:26,730 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:35,281 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:04:35,281 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:04:38,484 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:40,460 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:04:40,460 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:04:41,350 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:04:41,350 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:04:44,110 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L1 condition=cbt
+2025-12-11 15:04:44,110 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:44,795 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:04:45,573 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:04:45,738 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L2 condition=baseline
+2025-12-11 15:04:45,738 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:47,520 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:04:47,520 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:04:50,051 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:04:50,052 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:04:50,086 [INFO] core.longitudinal_runner: Round 1/5: model=kimik2 task=L2 condition=cbt
+2025-12-11 15:04:50,086 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:52,419 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L4 condition=cbt
+2025-12-11 15:04:52,419 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:53,654 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:04:53,654 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:04:56,408 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:57,539 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:01,144 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:01,144 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:01,831 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:01,831 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:02,241 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:05:04,655 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:04,655 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:05,004 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:05,004 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:05,124 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:05:05,371 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:05,371 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:06,564 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:06,564 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:06,762 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L1 condition=cbt
+2025-12-11 15:05:06,762 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:08,154 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:05:08,674 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:08,859 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:09,882 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:13,525 [INFO] core.longitudinal_runner: Round 3/5: model=gemini-3-pro task=L3 condition=cbt
+2025-12-11 15:05:13,525 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:13,785 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:21,242 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L5 condition=cbt
+2025-12-11 15:05:21,243 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:22,029 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:22,029 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:24,757 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L3 condition=cbt
+2025-12-11 15:05:24,757 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:25,715 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:25,715 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:26,580 [INFO] core.longitudinal_runner: Round 2/5: model=kimik2 task=L2 condition=cbt
+2025-12-11 15:05:26,580 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:27,555 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:05:28,962 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:28,963 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:29,094 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:31,757 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L5 condition=cbt
+2025-12-11 15:05:31,757 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:32,757 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:33,672 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L1 condition=cbt
+2025-12-11 15:05:33,672 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:05:34,440 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:36,052 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L4 condition=cbt
+2025-12-11 15:05:36,053 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:36,658 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:36,659 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:39,444 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:39,444 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:39,718 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:44,020 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:49,337 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:49,337 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:50,176 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L4 condition=cbt
+2025-12-11 15:05:50,178 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:05:53,397 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:54,890 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:54,890 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:55,436 [INFO] core.longitudinal_runner: Round 2/5: model=claude4.5 task=L3 condition=cbt
+2025-12-11 15:05:55,436 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:05:55,634 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L1 condition=cbt
+2025-12-11 15:05:55,634 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:59,730 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:04,123 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L5 condition=cbt
+2025-12-11 15:06:04,123 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:06:07,152 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L2 condition=cbt
+2025-12-11 15:06:07,153 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:09,511 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L5 condition=cbt
+2025-12-11 15:06:09,511 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:06:09,941 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:09,942 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:12,118 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:06:12,118 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:15,972 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:06:18,122 [INFO] core.longitudinal_runner: Round 4/5: model=gemini-3-pro task=L3 condition=cbt
+2025-12-11 15:06:18,123 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:23,030 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L5 condition=cbt
+2025-12-11 15:06:23,030 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:23,425 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:23,425 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:23,661 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L2 condition=cbt
+2025-12-11 15:06:23,662 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:06:24,908 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:24,908 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:27,620 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:28,936 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:06:32,570 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:32,570 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:33,645 [INFO] root: Longitudinal progress: 6/20 (30%)
+2025-12-11 15:06:34,598 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:34,598 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:36,039 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:36,089 [WARNING] core.llm_client: Attempt 1 failed for model google/gemini-3-pro-preview: HTTPSConnectionPool(host='openrouter.ai', port=443): Read timed out. (read timeout=60)
+2025-12-11 15:06:38,094 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 2)
+2025-12-11 15:06:39,057 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:39,058 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:39,675 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:06:42,579 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:42,580 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:43,215 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:06:46,186 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:46,186 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:47,153 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:47,397 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:47,397 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:48,905 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:48,906 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:51,491 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:53,334 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:06:53,453 [WARNING] core.llm_client: Attempt 1 failed for model moonshotai/kimi-k2-thinking: HTTPSConnectionPool(host='openrouter.ai', port=443): Read timed out. (read timeout=60)
+2025-12-11 15:06:53,557 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L5 condition=cbt
+2025-12-11 15:06:53,557 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:06:53,584 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:53,584 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:06:55,078 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:06:55,455 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 2)
+2025-12-11 15:06:55,771 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:57,175 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:57,736 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L2 condition=cbt
+2025-12-11 15:06:57,737 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:03,039 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:07:11,066 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L2 condition=cbt
+2025-12-11 15:07:11,066 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:15,488 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:15,488 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:17,111 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:20,603 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L4 condition=cbt
+2025-12-11 15:07:20,603 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:21,534 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:21,534 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:21,848 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:21,848 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:22,224 [INFO] core.longitudinal_runner: Round 3/5: model=kimik2 task=L3 condition=cbt
+2025-12-11 15:07:22,224 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:23,740 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L3 condition=cbt
+2025-12-11 15:07:23,741 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:24,276 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:24,276 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:26,257 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L4 condition=cbt
+2025-12-11 15:07:26,258 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:07:27,014 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:07:28,261 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:28,388 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:28,502 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:32,190 [INFO] core.longitudinal_runner: Round 3/5: model=claude4.5 task=L3 condition=cbt
+2025-12-11 15:07:32,190 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:07:34,971 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L2 condition=cbt
+2025-12-11 15:07:34,971 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:42,890 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:42,891 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:46,848 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:47,564 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:47,564 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:48,419 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:48,420 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:49,019 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:49,019 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:49,993 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:50,359 [INFO] core.longitudinal_runner: Round 5/5: model=gemini-3-pro task=L4 condition=cbt
+2025-12-11 15:07:50,359 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:51,233 [INFO] root: Longitudinal progress: 7/20 (35%)
+2025-12-11 15:07:51,757 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:51,757 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:52,846 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:53,329 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:55,237 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:55,448 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L5 condition=cbt
+2025-12-11 15:07:55,448 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:07:56,064 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:59,636 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L2 condition=cbt
+2025-12-11 15:07:59,636 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:08:01,198 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:08:01,198 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:08:08,355 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:08:08,573 [WARNING] core.llm_client: Attempt 1 failed for model moonshotai/kimi-k2-thinking: Response ended prematurely
+2025-12-11 15:08:10,579 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 2)
+2025-12-11 15:08:10,990 [INFO] root: Longitudinal progress: 8/20 (40%)
+2025-12-11 15:08:17,165 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:08:17,165 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:08:17,886 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:08:17,886 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:08:18,308 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:08:18,308 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:08:20,708 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:21,356 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:08:21,356 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:21,642 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:22,287 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:22,290 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:08:22,293 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:08:26,942 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L3 condition=cbt
+2025-12-11 15:08:26,942 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:08:28,270 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:31,736 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:08:31,736 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:34,277 [INFO] root: Longitudinal progress: 9/20 (45%)
+2025-12-11 15:08:43,136 [INFO] root: Longitudinal progress: 10/20 (50%)
+2025-12-11 15:08:43,796 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:44,811 [INFO] root: Longitudinal progress: 11/20 (55%)
+2025-12-11 15:08:45,134 [INFO] core.longitudinal_runner: Round 4/5: model=kimik2 task=L4 condition=cbt
+2025-12-11 15:08:45,134 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:08:45,592 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:08:45,592 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:08:48,080 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:08:48,080 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:49,827 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:08:52,591 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:53,462 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:08:53,462 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:56,528 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:59,042 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:08:59,043 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:09:03,379 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:09:08,282 [INFO] root: Longitudinal progress: 12/20 (60%)
+2025-12-11 15:09:13,222 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:09:13,223 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:09:15,128 [INFO] root: Longitudinal progress: 13/20 (65%)
+2025-12-11 15:09:15,883 [INFO] core.longitudinal_runner: Round 4/5: model=claude4.5 task=L3 condition=cbt
+2025-12-11 15:09:15,883 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:09:18,573 [INFO] root: Longitudinal progress: 14/20 (70%)
+2025-12-11 15:09:19,653 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:09:30,294 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L3 condition=cbt
+2025-12-11 15:09:30,294 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:09:39,572 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:09:39,575 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:09:39,742 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:09:45,231 [INFO] core.longitudinal_runner: Round 5/5: model=kimik2 task=L4 condition=cbt
+2025-12-11 15:09:45,231 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:09:54,619 [INFO] root: Longitudinal progress: 15/20 (75%)
+2025-12-11 15:09:56,913 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:09:56,913 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:09:58,506 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:10:04,485 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:10:04,485 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:10:04,516 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:10:04,516 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:10:05,947 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:10:08,110 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:10:09,654 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:10:09,654 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:10:15,625 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:10:19,179 [INFO] root: Longitudinal progress: 16/20 (80%)
+2025-12-11 15:10:23,560 [INFO] root: Longitudinal progress: 17/20 (85%)
+2025-12-11 15:10:26,497 [INFO] root: Longitudinal progress: 18/20 (90%)
+2025-12-11 15:10:38,198 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:10:52,891 [INFO] core.longitudinal_runner: Round 5/5: model=claude4.5 task=L3 condition=cbt
+2025-12-11 15:10:52,892 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:11:13,770 [INFO] root: Longitudinal progress: 19/20 (95%)
+2025-12-11 15:11:40,351 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:11:40,351 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:11:45,752 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:12:45,493 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:12,585 [INFO] root: Longitudinal progress: 20/20 (100%)
+2025-12-11 15:13:12,601 [INFO] root: Longitudinal experiment complete → /Users/vid/aitherapy/output/longitudinal_results.json

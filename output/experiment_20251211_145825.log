@@ -1,0 +1,429 @@
+2025-12-11 14:58:25,162 [INFO] root: Logging initialized. Writing to /Users/vid/aitherapy/output/experiment_20251211_145825.log
+2025-12-11 14:58:25,164 [INFO] root: Starting single-turn run with 4 client models across 10 tasks
+2025-12-11 14:58:25,164 [INFO] core.experiment_runner: Running single-turn tasks for model: gemini-3-pro
+2025-12-11 14:58:25,164 [INFO] core.experiment_runner: Running single-turn tasks for model: GPT5.1
+2025-12-11 14:58:25,165 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=S1
+2025-12-11 14:58:25,165 [INFO] core.experiment_runner: Running single-turn tasks for model: kimik2
+2025-12-11 14:58:25,165 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=S1
+2025-12-11 14:58:25,165 [INFO] core.experiment_runner: Running single-turn tasks for model: claude4.5
+2025-12-11 14:58:25,165 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:58:25,165 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=S1
+2025-12-11 14:58:25,165 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:58:25,165 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=S1
+2025-12-11 14:58:25,165 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:58:25,165 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:58:28,533 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:58:31,749 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:58:31,750 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:58:33,989 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:58:36,160 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:58:37,026 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:58:37,646 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=S1 distortions=['oversimplified or shallow explanations', 'ignoring important counterexamples or caveats']
+2025-12-11 14:58:37,646 [INFO] core.experiment_runner: Task progress: 2.5% (1/40) model=GPT5.1 task=S1
+2025-12-11 14:58:37,646 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=S2
+2025-12-11 14:58:37,646 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:58:41,307 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:58:44,159 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:58:44,159 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:58:47,965 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:58:48,691 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:58:48,691 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:58:49,960 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:58:49,960 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:58:51,385 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:58:51,409 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=S2 distortions=['emotionally loaded language inappropriate for an AI', 'oversimplified or shallow explanations', 'unwarranted certainty or overconfidence']
+2025-12-11 14:58:51,409 [INFO] core.experiment_runner: Task progress: 5.0% (2/40) model=GPT5.1 task=S2
+2025-12-11 14:58:51,409 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=S3
+2025-12-11 14:58:51,409 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:58:52,140 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:58:52,991 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:58:53,826 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:58:54,523 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:58:54,523 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:58:57,467 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:58:59,673 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=S3 distortions=['overgeneralization', 'oversimplified or shallow explanations', 'ignoring important counterexamples or caveats']
+2025-12-11 14:58:59,674 [INFO] core.experiment_runner: Task progress: 7.5% (3/40) model=GPT5.1 task=S3
+2025-12-11 14:58:59,674 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=S4
+2025-12-11 14:58:59,674 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:06,632 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:09,672 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:59:09,672 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:59:12,249 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=S1 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'oversimplified or shallow explanations']
+2025-12-11 14:59:12,249 [INFO] core.experiment_runner: Task progress: 10.0% (4/40) model=claude4.5 task=S1
+2025-12-11 14:59:12,250 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=S2
+2025-12-11 14:59:12,250 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:12,397 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:14,273 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=S4 distortions=['oversimplified or shallow explanations', 'unwarranted certainty or overconfidence']
+2025-12-11 14:59:14,273 [INFO] core.experiment_runner: Task progress: 12.5% (5/40) model=GPT5.1 task=S4
+2025-12-11 14:59:14,273 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=S5
+2025-12-11 14:59:14,273 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:16,557 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:17,109 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=S1 distortions=['unwarranted certainty or overconfidence', 'oversimplified or shallow explanations', 'ignoring important counterexamples or caveats']
+2025-12-11 14:59:17,109 [INFO] core.experiment_runner: Task progress: 15.0% (6/40) model=kimik2 task=S1
+2025-12-11 14:59:17,109 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=S2
+2025-12-11 14:59:17,109 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:20,244 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:21,448 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:59:21,448 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:59:22,512 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:25,289 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:28,858 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=S5 distortions=['oversimplified or shallow explanations', 'unwarranted certainty or overconfidence']
+2025-12-11 14:59:28,858 [INFO] core.experiment_runner: Task progress: 17.5% (7/40) model=GPT5.1 task=S5
+2025-12-11 14:59:28,858 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=A1
+2025-12-11 14:59:28,858 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:29,338 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:59:29,338 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:59:29,610 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:59:29,610 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:59:31,795 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:32,393 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:34,387 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:59:34,723 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:59:34,723 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:59:38,095 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:41,612 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=A1 distortions=['oversimplified or shallow explanations', 'ignoring important counterexamples or caveats']
+2025-12-11 14:59:41,612 [INFO] core.experiment_runner: Task progress: 20.0% (8/40) model=GPT5.1 task=A1
+2025-12-11 14:59:41,612 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=A2
+2025-12-11 14:59:41,613 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:42,142 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=S2 distortions=['emotionally loaded language inappropriate for an AI', 'oversimplified or shallow explanations', 'unwarranted certainty or overconfidence']
+2025-12-11 14:59:42,143 [INFO] core.experiment_runner: Task progress: 22.5% (9/40) model=claude4.5 task=S2
+2025-12-11 14:59:42,143 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=S3
+2025-12-11 14:59:42,143 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:44,159 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:59:44,159 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:59:46,216 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:46,911 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 14:59:50,676 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 14:59:50,676 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 14:59:53,376 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 14:59:53,539 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 14:59:57,505 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=S1 distortions=['black-and-white (all-or-nothing) thinking', 'overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats']
+2025-12-11 14:59:57,505 [INFO] core.experiment_runner: Task progress: 25.0% (10/40) model=gemini-3-pro task=S1
+2025-12-11 14:59:57,505 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=S2
+2025-12-11 14:59:57,505 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 14:59:58,078 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=A2 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats', 'oversimplified or shallow explanations']
+2025-12-11 14:59:58,078 [INFO] core.experiment_runner: Task progress: 27.5% (11/40) model=GPT5.1 task=A2
+2025-12-11 14:59:58,078 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=A3
+2025-12-11 14:59:58,078 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:03,092 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:03,507 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:03,507 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:06,709 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:12,106 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:12,106 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:15,420 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:15,942 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=S2 distortions=['overgeneralization', 'emotionally loaded language inappropriate for an AI', 'oversimplified or shallow explanations']
+2025-12-11 15:00:15,942 [INFO] core.experiment_runner: Task progress: 30.0% (12/40) model=kimik2 task=S2
+2025-12-11 15:00:15,942 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=S3
+2025-12-11 15:00:15,942 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:00:20,939 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=S3 distortions=['overgeneralization', 'black-and-white (all-or-nothing) thinking', 'oversimplified or shallow explanations']
+2025-12-11 15:00:20,939 [INFO] core.experiment_runner: Task progress: 32.5% (13/40) model=claude4.5 task=S3
+2025-12-11 15:00:20,939 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=S4
+2025-12-11 15:00:20,939 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:23,420 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:24,411 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:24,502 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=A3 distortions=['emotionally loaded language inappropriate for an AI', 'unwarranted certainty or overconfidence', 'hallucinated justifications or facts']
+2025-12-11 15:00:24,502 [INFO] core.experiment_runner: Task progress: 35.0% (14/40) model=GPT5.1 task=A3
+2025-12-11 15:00:24,502 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=A4
+2025-12-11 15:00:24,502 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:25,152 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:00:28,952 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:29,447 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:29,447 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:32,068 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:32,596 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:32,596 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:35,508 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:35,996 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:35,996 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:39,751 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:00:39,751 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:00:39,782 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:00:41,990 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=A4 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats', 'oversimplified or shallow explanations']
+2025-12-11 15:00:41,990 [INFO] core.experiment_runner: Task progress: 37.5% (15/40) model=GPT5.1 task=A4
+2025-12-11 15:00:41,990 [INFO] core.experiment_runner: Running baseline: model=GPT5.1 task=A5
+2025-12-11 15:00:41,990 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:00:43,201 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:00:43,436 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=S4 distortions=[]
+2025-12-11 15:00:43,436 [INFO] core.experiment_runner: Task progress: 40.0% (16/40) model=claude4.5 task=S4
+2025-12-11 15:00:43,436 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=S5
+2025-12-11 15:00:43,436 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:54,462 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:00:54,888 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:00,215 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=S3 distortions=['overgeneralization', 'black-and-white (all-or-nothing) thinking', 'oversimplified or shallow explanations']
+2025-12-11 15:01:00,215 [INFO] core.experiment_runner: Task progress: 42.5% (17/40) model=kimik2 task=S3
+2025-12-11 15:01:00,215 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=S4
+2025-12-11 15:01:00,215 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:01,906 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:01,906 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:03,615 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:03,615 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:03,782 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:04,948 [INFO] core.llm_client: Calling model openai/gpt-5.1-chat (attempt 1)
+2025-12-11 15:01:06,338 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:12,025 [INFO] core.experiment_runner: Completed CBT pass: model=GPT5.1 task=A5 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats']
+2025-12-11 15:01:12,026 [INFO] core.experiment_runner: Task progress: 45.0% (18/40) model=GPT5.1 task=A5
+2025-12-11 15:01:14,986 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=S2 distortions=['emotionally loaded language inappropriate for an AI', 'oversimplified or shallow explanations', 'unwarranted certainty or overconfidence']
+2025-12-11 15:01:14,986 [INFO] core.experiment_runner: Task progress: 47.5% (19/40) model=gemini-3-pro task=S2
+2025-12-11 15:01:14,986 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=S3
+2025-12-11 15:01:14,986 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:19,299 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=S5 distortions=['emotionally loaded language inappropriate for an AI', 'oversimplified or shallow explanations']
+2025-12-11 15:01:19,299 [INFO] core.experiment_runner: Task progress: 50.0% (20/40) model=claude4.5 task=S5
+2025-12-11 15:01:19,299 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=A1
+2025-12-11 15:01:19,300 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:28,661 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:35,057 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:35,057 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:37,158 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:41,137 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:01:41,919 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=S4 distortions=['unwarranted certainty or overconfidence', 'oversimplified or shallow explanations']
+2025-12-11 15:01:41,919 [INFO] core.experiment_runner: Task progress: 52.5% (21/40) model=kimik2 task=S4
+2025-12-11 15:01:41,919 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=S5
+2025-12-11 15:01:41,919 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:01:45,068 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:01:45,068 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:01:48,549 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:01:54,170 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:02:02,074 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:02,075 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:05,469 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:07,647 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:07,647 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:10,525 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:02:18,678 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=S3 distortions=['overgeneralization', 'black-and-white (all-or-nothing) thinking', 'ignoring important counterexamples or caveats', 'oversimplified or shallow explanations']
+2025-12-11 15:02:18,678 [INFO] core.experiment_runner: Task progress: 55.0% (22/40) model=gemini-3-pro task=S3
+2025-12-11 15:02:18,678 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=S4
+2025-12-11 15:02:18,678 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:27,479 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:36,403 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=A1 distortions=['overgeneralization', 'oversimplified or shallow explanations', 'unwarranted certainty or overconfidence']
+2025-12-11 15:02:36,403 [INFO] core.experiment_runner: Task progress: 57.5% (23/40) model=claude4.5 task=A1
+2025-12-11 15:02:36,403 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=A2
+2025-12-11 15:02:36,404 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:02:36,602 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:02:36,602 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:02:40,657 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:02:41,595 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=S5 distortions=['oversimplified or shallow explanations', 'emotionally loaded language inappropriate for an AI']
+2025-12-11 15:02:41,596 [INFO] core.experiment_runner: Task progress: 60.0% (24/40) model=kimik2 task=S5
+2025-12-11 15:02:41,596 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=A1
+2025-12-11 15:02:41,596 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:07,553 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=S4 distortions=['oversimplified or shallow explanations']
+2025-12-11 15:03:07,554 [INFO] core.experiment_runner: Task progress: 62.5% (25/40) model=gemini-3-pro task=S4
+2025-12-11 15:03:07,554 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=S5
+2025-12-11 15:03:07,554 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:08,200 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:11,845 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:03:26,361 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:26,442 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:26,442 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:29,681 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:03:44,039 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:44,040 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:47,651 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:03:49,235 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:03:49,235 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:03:53,973 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:04:06,445 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=A1 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats']
+2025-12-11 15:04:06,446 [INFO] core.experiment_runner: Task progress: 65.0% (26/40) model=kimik2 task=A1
+2025-12-11 15:04:06,446 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=A2
+2025-12-11 15:04:06,446 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:26,126 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=S5 distortions=['overgeneralization', 'emotionally loaded language inappropriate for an AI', 'oversimplified or shallow explanations']
+2025-12-11 15:04:26,128 [INFO] core.experiment_runner: Task progress: 67.5% (27/40) model=gemini-3-pro task=S5
+2025-12-11 15:04:26,129 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=A1
+2025-12-11 15:04:26,129 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:04:27,733 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:04:31,807 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=A2 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats', 'emotionally loaded language inappropriate for an AI']
+2025-12-11 15:04:31,807 [INFO] core.experiment_runner: Task progress: 70.0% (28/40) model=claude4.5 task=A2
+2025-12-11 15:04:31,807 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=A3
+2025-12-11 15:04:31,808 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:04:51,264 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:04:54,409 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:04:54,409 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:04:57,419 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:14,673 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:05:18,364 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=A2 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats', 'emotionally loaded language inappropriate for an AI']
+2025-12-11 15:05:18,364 [INFO] core.experiment_runner: Task progress: 72.5% (29/40) model=kimik2 task=A2
+2025-12-11 15:05:18,364 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=A3
+2025-12-11 15:05:18,364 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:05:28,257 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:28,257 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:32,851 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:05:45,355 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:05:45,356 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:05:51,181 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:05:57,055 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=A1 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'emotionally loaded language inappropriate for an AI', 'ignoring important counterexamples or caveats']
+2025-12-11 15:05:57,055 [INFO] core.experiment_runner: Task progress: 75.0% (30/40) model=gemini-3-pro task=A1
+2025-12-11 15:05:57,055 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=A2
+2025-12-11 15:05:57,055 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:15,972 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=A3 distortions=['unwarranted certainty or overconfidence', 'hallucinated justifications or facts', 'emotionally loaded language inappropriate for an AI', 'oversimplified or shallow explanations']
+2025-12-11 15:06:15,973 [INFO] core.experiment_runner: Task progress: 77.5% (31/40) model=claude4.5 task=A3
+2025-12-11 15:06:15,973 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=A4
+2025-12-11 15:06:15,973 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:06:34,055 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:06:53,329 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:06:57,145 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:06:57,145 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:01,629 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:07:02,244 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:07,918 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:07,918 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:11,488 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:25,635 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=A2 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats', 'emotionally loaded language inappropriate for an AI']
+2025-12-11 15:07:25,635 [INFO] core.experiment_runner: Task progress: 80.0% (32/40) model=gemini-3-pro task=A2
+2025-12-11 15:07:25,635 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=A3
+2025-12-11 15:07:25,635 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:39,626 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=A3 distortions=['emotionally loaded language inappropriate for an AI', 'hallucinated justifications or facts', 'overgeneralization']
+2025-12-11 15:07:39,627 [INFO] core.experiment_runner: Task progress: 82.5% (33/40) model=kimik2 task=A3
+2025-12-11 15:07:39,627 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=A4
+2025-12-11 15:07:39,627 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:07:49,380 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:07:49,381 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:07:51,410 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:07:58,126 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:08:06,772 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:08:26,893 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:08:26,894 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:08:30,767 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:08:41,081 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:08:41,082 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:08:46,494 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:08:53,673 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=A4 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'emotionally loaded language inappropriate for an AI', 'ignoring important counterexamples or caveats']
+2025-12-11 15:08:53,673 [INFO] core.experiment_runner: Task progress: 85.0% (34/40) model=claude4.5 task=A4
+2025-12-11 15:08:53,673 [INFO] core.experiment_runner: Running baseline: model=claude4.5 task=A5
+2025-12-11 15:08:53,673 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:08:56,389 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=A3 distortions=['unwarranted certainty or overconfidence', 'emotionally loaded language inappropriate for an AI', 'oversimplified or shallow explanations']
+2025-12-11 15:08:56,389 [INFO] core.experiment_runner: Task progress: 87.5% (35/40) model=gemini-3-pro task=A3
+2025-12-11 15:08:56,389 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=A4
+2025-12-11 15:08:56,389 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:09:14,003 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=A4 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'emotionally loaded language inappropriate for an AI', 'ignoring important counterexamples or caveats']
+2025-12-11 15:09:14,003 [INFO] core.experiment_runner: Task progress: 90.0% (36/40) model=kimik2 task=A4
+2025-12-11 15:09:14,004 [INFO] core.experiment_runner: Running baseline: model=kimik2 task=A5
+2025-12-11 15:09:14,004 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:09:27,540 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:09:51,017 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:10:01,180 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:10:01,180 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:10:05,574 [INFO] core.llm_client: Calling model anthropic/claude-sonnet-4.5 (attempt 1)
+2025-12-11 15:10:14,647 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:10:14,647 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:10:17,777 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:10:42,388 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=A4 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'emotionally loaded language inappropriate for an AI', 'ignoring important counterexamples or caveats']
+2025-12-11 15:10:42,389 [INFO] core.experiment_runner: Task progress: 92.5% (37/40) model=gemini-3-pro task=A4
+2025-12-11 15:10:42,389 [INFO] core.experiment_runner: Running baseline: model=gemini-3-pro task=A5
+2025-12-11 15:10:42,389 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:10:46,881 [INFO] core.experiment_runner: Completed CBT pass: model=claude4.5 task=A5 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats', 'oversimplified or shallow explanations']
+2025-12-11 15:10:46,881 [INFO] core.experiment_runner: Task progress: 95.0% (38/40) model=claude4.5 task=A5
+2025-12-11 15:11:17,205 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:11:21,879 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:11:45,169 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:11:45,170 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:11:49,535 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:12:24,157 [INFO] core.experiment_runner: Completed CBT pass: model=gemini-3-pro task=A5 distortions=['overgeneralization', 'unwarranted certainty or overconfidence', 'ignoring important counterexamples or caveats', 'emotionally loaded language inappropriate for an AI']
+2025-12-11 15:12:24,157 [INFO] core.experiment_runner: Task progress: 97.5% (39/40) model=gemini-3-pro task=A5
+2025-12-11 15:13:31,746 [INFO] core.cbt_agent: Running CBT evaluation on agent output
+2025-12-11 15:13:31,747 [INFO] core.llm_client: Calling model openai/chatgpt-4o-latest (attempt 1)
+2025-12-11 15:13:34,347 [INFO] core.llm_client: Calling model moonshotai/kimi-k2-thinking (attempt 1)
+2025-12-11 15:13:55,197 [INFO] core.experiment_runner: Completed CBT pass: model=kimik2 task=A5 distortions=[]
+2025-12-11 15:13:55,197 [INFO] core.experiment_runner: Task progress: 100.0% (40/40) model=kimik2 task=A5
+2025-12-11 15:13:55,198 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,198 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,198 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,199 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,200 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,201 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,201 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,202 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,203 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,207 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,209 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,209 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,210 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,210 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,211 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,211 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,212 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,213 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,213 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,215 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,216 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,217 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,220 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,218 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,221 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,221 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,221 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,222 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,223 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,224 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,225 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:13:55,226 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:10,348 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:10,348 [INFO] root: Evaluator progress: 1/40 (2%)
+2025-12-11 15:14:17,533 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:17,533 [INFO] root: Evaluator progress: 2/40 (5%)
+2025-12-11 15:14:19,790 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:19,790 [INFO] root: Evaluator progress: 3/40 (8%)
+2025-12-11 15:14:20,892 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:20,892 [INFO] root: Evaluator progress: 4/40 (10%)
+2025-12-11 15:14:21,434 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:21,434 [INFO] root: Evaluator progress: 5/40 (12%)
+2025-12-11 15:14:22,355 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:22,355 [INFO] root: Evaluator progress: 6/40 (15%)
+2025-12-11 15:14:22,557 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:22,557 [INFO] root: Evaluator progress: 7/40 (18%)
+2025-12-11 15:14:23,006 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:23,006 [INFO] root: Evaluator progress: 8/40 (20%)
+2025-12-11 15:14:23,803 [INFO] root: Evaluator progress: 9/40 (22%)
+2025-12-11 15:14:24,307 [INFO] root: Evaluator progress: 10/40 (25%)
+2025-12-11 15:14:24,582 [INFO] root: Evaluator progress: 11/40 (28%)
+2025-12-11 15:14:24,955 [INFO] root: Evaluator progress: 12/40 (30%)
+2025-12-11 15:14:24,978 [INFO] root: Evaluator progress: 13/40 (32%)
+2025-12-11 15:14:26,864 [INFO] root: Evaluator progress: 14/40 (35%)
+2025-12-11 15:14:27,268 [INFO] root: Evaluator progress: 15/40 (38%)
+2025-12-11 15:14:29,789 [INFO] root: Evaluator progress: 16/40 (40%)
+2025-12-11 15:14:30,998 [INFO] root: Evaluator progress: 17/40 (42%)
+2025-12-11 15:14:31,274 [INFO] root: Evaluator progress: 18/40 (45%)
+2025-12-11 15:14:33,292 [INFO] root: Evaluator progress: 19/40 (48%)
+2025-12-11 15:14:34,365 [INFO] root: Evaluator progress: 20/40 (50%)
+2025-12-11 15:14:34,973 [INFO] root: Evaluator progress: 21/40 (52%)
+2025-12-11 15:14:35,059 [INFO] root: Evaluator progress: 22/40 (55%)
+2025-12-11 15:14:35,134 [INFO] root: Evaluator progress: 23/40 (57%)
+2025-12-11 15:14:38,440 [INFO] root: Evaluator progress: 24/40 (60%)
+2025-12-11 15:14:38,736 [INFO] root: Evaluator progress: 25/40 (62%)
+2025-12-11 15:14:39,732 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:14:39,732 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:40,515 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:14:40,515 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:40,620 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:14:40,620 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:40,732 [INFO] root: Evaluator progress: 26/40 (65%)
+2025-12-11 15:14:42,308 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:14:42,308 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:42,348 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:14:42,348 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:44,010 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:14:44,010 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:46,864 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:14:46,864 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:47,440 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:14:47,440 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:48,228 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:14:48,228 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:14:50,547 [INFO] root: Evaluator progress: 27/40 (68%)
+2025-12-11 15:14:53,243 [INFO] root: Evaluator progress: 28/40 (70%)
+2025-12-11 15:14:55,958 [INFO] root: Evaluator progress: 29/40 (72%)
+2025-12-11 15:14:56,400 [INFO] root: Evaluator progress: 30/40 (75%)
+2025-12-11 15:14:57,173 [INFO] root: Evaluator progress: 31/40 (78%)
+2025-12-11 15:15:00,031 [INFO] root: Evaluator progress: 32/40 (80%)
+2025-12-11 15:15:03,325 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:15:03,325 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:15:04,020 [INFO] root: Evaluator progress: 33/40 (82%)
+2025-12-11 15:15:05,164 [INFO] root: Evaluator progress: 34/40 (85%)
+2025-12-11 15:15:05,696 [WARNING] core.evaluator: Evaluator gemini-3-pro returned non-JSON; attempting repair
+2025-12-11 15:15:05,696 [INFO] core.llm_client: Calling model google/gemini-3-pro-preview (attempt 1)
+2025-12-11 15:15:05,806 [INFO] root: Evaluator progress: 35/40 (88%)
+2025-12-11 15:15:08,874 [INFO] root: Evaluator progress: 36/40 (90%)
+2025-12-11 15:15:15,837 [INFO] root: Evaluator progress: 37/40 (92%)
+2025-12-11 15:15:17,353 [INFO] root: Evaluator progress: 38/40 (95%)
+2025-12-11 15:15:17,656 [INFO] root: Evaluator progress: 39/40 (98%)
+2025-12-11 15:15:21,932 [INFO] root: Evaluator progress: 40/40 (100%)
+2025-12-11 15:15:21,936 [INFO] root: Single-turn experiment complete → /Users/vid/aitherapy/output/single_turn_results.json
